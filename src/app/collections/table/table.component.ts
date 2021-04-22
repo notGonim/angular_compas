@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css'],
 })
 export class TableComponent implements OnInit {
-  @Input() header: { key: string; label: string }[] = [];
-  @Input() data= [];
+  @Input('header') header: { key: string; label: string }[] = [];
+  @Input('data') data= [];
 
   constructor() {}
 

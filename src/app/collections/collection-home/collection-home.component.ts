@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./collection-home.component.css'],
 })
 export class CollectionHomeComponent implements OnInit {
-  data: { name: string; age: number; job: string }[] = [
+  data = [
     {
       name: 'James',
       age: 25,
@@ -24,7 +24,7 @@ export class CollectionHomeComponent implements OnInit {
     },
   ];
 
-  header: { key: string; label: string }[] = [
+  header = [
     {
       key: 'name',
       label: 'Name',
